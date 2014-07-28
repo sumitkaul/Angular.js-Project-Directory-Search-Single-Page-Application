@@ -1,31 +1,17 @@
 <!doctype html>
-<html lang ="en" ng-app>
+<html lang ="en" ng-app= "myApp">
 <head>
 	<meta charset="UTF-8">
 	<title> Angular Demo</title>
 	<script src="lib/angular/angular.min.js" ></script>
+	<script src="js/controllers.js" > </script>
 </head>
 <body>
-	
 <!-- this is the view in our case where data is coming from the model and the controller is the one which is connecting the view and model-->
 <div ng-controller="MyController">
 	<h1>{{author.name}}</h1>
 	<p>{{ author.title + ',' + author.company }}</p>
 </div>
-
-
-
-
-<script> 
-//Here the scope is the model and Mycontroller is the controller in which scope is passed as a parameter //which is model.
-function MyController($scope){	
-	$scope.author = {
-		'name':'Sumit Kaul',
-		'title' : 'Senior Software Engineer',
-		'company': 'Creative'
-	}
-}
-</script>
 
 </body>
 </html>
