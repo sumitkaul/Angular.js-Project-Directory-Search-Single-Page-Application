@@ -11,10 +11,10 @@
 <!-- this is the view in our case where data is coming from the model and the controller is the one which is connecting the view and model-->
 <div class="main" ng-controller="MyController">
 	<ul class="artistlist">
-		<li class="artist cf" ng-repeat="item in artists">
+		<li class="artist cf" ng-repeat="item in artists | limitTo:7">
 			<img ng-src="images/{{item.shortname}}_tn.jpg" alt="Photo of {{item.name}}">
 			<div class="info">
-				<h2>{{item.name}}</h2>
+				<h2>{{item.name | uppercase}}</h2>
 				<h3>{{item.reknown}}</h3>
 			</div>
 		</li>
