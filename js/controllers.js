@@ -5,7 +5,7 @@ artistControllers.controller('ListController', ['$scope','$http',function ($scop
 
 	$http.get("js/data.json").success(function(data){
 	$scope.artists =data;
-	$scope.artists ='name';
+	$scope.artistOrder ='name';
 
 	});		 
 }]);
