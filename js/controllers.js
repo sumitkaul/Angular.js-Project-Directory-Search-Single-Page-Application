@@ -1,5 +1,5 @@
 //this is the creation of the namespace so that we can protect our variables for nameing conflicts
-var artistControllers = angular.module('artistControllers',[]);
+var artistControllers = angular.module('artistControllers',['ngAnimate']);
 
 artistControllers.controller('ListController', ['$scope','$http',function ($scope,$http){
 
